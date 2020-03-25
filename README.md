@@ -34,6 +34,14 @@ Usada para definir a navegação do usuário. Se tem um texto e quer que o usuá
 
 - `<title>` - Passa qual o título, o navegador que define onde ela estará. Geralmente é na aba da página.
 
+- `<link>` - faz a relação entre as duas páginas html e css. 
+
+
+# CSS
+
+É uma linguagem de estilgo e tem as seguintes responsabilidades:
+
+-Visual;
 
 
 

@@ -3,7 +3,8 @@ header{
     color: white;
     overflow: hidden;
     margin: 0 115px;
-    padding: 55px 60px 95px;   
+    padding: 55px 60px 95px;
+    transform: translateY(50%);
 }
 
 h1{    

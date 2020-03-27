@@ -77,6 +77,11 @@ padding bottom: 150px;
     padding: 60px;
 ```
 
+- `padding-inline;` - é definido um `padding:inline` para os quatro lados de um elemento inline o efeito será aplicado somente nos lados esquerdo e direito, sendo ignorado o padding-top e o padding-bottom.
+```
+padding-inline: 60px;
+```
+
 - `margin;` - Respiro externo. Quando preciso que os elementos se afastem. Quando precisar que o lado direito ou esquerdo se afaste é só digitar (ex). Sempre o tamanho será em pixels. Espaçamento entre elementos. As formas reduzidas para descrever o `margin` funcionam da mesma fomra que funcionam no `padding`.
 ```
 margin top: 60px;

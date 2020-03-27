@@ -19,6 +19,7 @@ nav{
 }
 
 a{
+    padding-inline: 30px;
     text-decoration: none;
     color: inherit;
 }

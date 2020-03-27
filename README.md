@@ -41,9 +41,45 @@ Usada para definir a navegação do usuário. Se tem um texto e quer que o usuá
 
 É uma linguagem de estilgo e tem as seguintes responsabilidades:
 
--Visual;
+- Visual;
 
+ - `overflow: hidden;` - esconde um elemento [recalcula um elemento que está com um novo contexto] Quando os 'filhos' estão flutuando e quiser que o pai considere-os. Serve também para não perder a altura e largura do pai.
 
+- `padding;` - Respiro interno. Quando preciso que conteúdo de um elemento se afaste das extremidades uso o `padding`. 
+Sempre o tamanho será em pixels. Espaçamento dentro do próprio elemento. Quando precisar que o lado direito ou esquerdo se afaste é só digitar (ex). Quando o respiro precisa ser da extremidade para baixo ou para cima. Os tamanhos nem sempre são iguais. 
 
+```
+padding left: 60px;
+padding rigth: 60px;
+padding top: 60px;
+padding bottom: 150px;
+```
 
-    
+- Primeira forma para escrever o `padding` simplificada onde o exemplo acima pode ser escrito dessa forma (lembrar sempre da sequência `padding: top right bottom left;`):
+```
+    (-> Forma resumida: padding: top right bottom left;)
+    padding: 55px 60px 95px 60px;
+```
+
+- Segunda maneira simplificada em que são passados apenas dois valores, os valores de `top e bottom` são iguais e os valores de `right e left` são iguais(lembrar sempre da sequência `padding: top/bottom right/left;`):
+```
+    (-> Forma resumida: padding: top/bottom right/left;)
+    padding: 55px 60px;
+```
+- Terceira maneira simplificada em que são passados três valores, o valor de `top` é único, os valores de `right e left` são iguais e o valor do `bottom` é único(lembrar sempre da sequência `padding: top right/left bottom;`):
+```
+    (-> Forma resumida: padding: top right/left bottom;)
+    padding: 55px 60px 95px;
+```
+- Quarta maneira simplificada em que é passado apenas 1 único valor e o mesmo vale para `top/right/left/bottom`:
+```
+    (-> Forma resumida: padding: top/right/left/bottom;)
+    padding: 60px;
+```
+
+- `margin;` - Respiro externo. Quando preciso que os elementos se afastem. Quando precisar que o lado direito ou esquerdo se afaste é só digitar (ex). Sempre o tamanho será em pixels. Espaçamento entre elementos. As formas reduzidas para descrever o `margin` funcionam da mesma fomra que funcionam no `padding`.
+```
+margin top: 60px;
+margin bottom: 150px;
+```
+

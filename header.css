@@ -1,22 +1,24 @@
 header{ 
     background-color: #e24647;
+    color: white;
+    overflow: hidden;
+    margin: 0 115px;
+    padding: 55px 60px 95px;   
 }
 
-h1,
-a{
-    color:#fff;    
-    display: inline-block;
-}
-
-h1{
+h1{    
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
 }
 
-nav,
-a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+nav{
     font-size: 21px;
-    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: right;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }

@@ -17,7 +17,11 @@ Usada para definir a navegação do usuário. Se tem um texto e quer que o usuá
 ```
 <a href="http://www.google.com">Goole</a>
 ```
+- `<button>` - Botão. Feito dinâmicamente com Java Script. Não tem `href` 
 
+```
+<button >Adicionar Carrinho</a>
+```
 - `<!DOCTYPE html>` - avisar para o browser qual a versão do HTML que está o código. O browser utiliza a versão mais recente e mais estável disponível.
 
 - `<html>` - tem que envolver todas as tag dentro dessa tag, pois mostra que elas são do HTML.
@@ -36,9 +40,15 @@ Usada para definir a navegação do usuário. Se tem um texto e quer que o usuá
 
 - `<link>` - faz a relação entre as duas páginas html e css. 
 
+- `<dl> - (description List)` - Ítens da descrição. 
+
+- `<dt> - (description title)` - Título da descrição. 
+
+- `<dd> - (define description)` - Define o que está escrevendo. 
 
 # CSS
 
+NUNCA alterar o reset.
 É uma linguagem de estilgo e tem as seguintes responsabilidades:
 
 - Visual;
@@ -88,3 +98,70 @@ margin top: 60px;
 margin bottom: 150px;
 ```
 
+- `Seletores de TAG`
+
+Seletor de TAG - Deve especificar o nome da TAG
+```
+    nome_da_TAG{
+        mesmo comportamento para todos os atributos
+        que estão entre as TAGS. Preso a TAG.
+    }
+```
+Seletor de ID - Deve especificar o nome do ID
+```
+    #nome_do_ID{
+        mesmo comportamento para a TAG que contém
+        o ID específico. APENAS um por Página.
+    }
+```
+Seletor de CLASS - Deve especificar o nome da CLASS `Preferência pelo CLASS` - ideia da classe é ser flexível.
+```
+    .nome_da_CLASS{
+        mesmo comportamento para todas as TAGS que contém o mesmo nome. Pode usar N vezes na 
+        mesma página.
+    }
+```
+
+Seletor de CLASS - Precisa de uma base, depois da base, adiciona um recurso que vai fazer uma diferença com a base que temos `Preferência pelo CLASS`
+```
+    .-nome_da_CLASS{
+        é uma variação da CLASS. Utiliza a mesma CLASS, porém adicionando outros comportamentos para o elemento.
+    }
+```
+
+Seletor de E - TEM QUE TER AS DUAS CLASSES. Procura o elemento na página que tenha a class button-store e a class -second.
+
+```
+    .noma_da_CLASS.-variacao{
+        TEM QUE TER AS DUAS CLASSES. Procura o elemento na página que tenha a class button-store e a class -second
+    }
+```
+
+- `DISPLAY`
+
+- Display INLINE - Deixa os elementos na mesma linha. Não consegue definir o Width e Height (Altura e Largura).
+
+- Display BLOCK - Não deixa os elementos na mesma linha. Permite definir o Width e Height (Altura e Largura).
+
+- Display INLINE-BLOCK - Deixa os elementos na mesma linha. Permite definir o Width e Height (Altura e Largura).
+`vertical-align` - funciona somente com os dois elementos na mesma linha que são `inline-block`. Alinha os elementos. Tem que ser os dois elementos.
+
+- `line-height` - usado para centralizar um elemento verticalmente. Tomar cuidado com o tamanho. É do tamanho da altura da linha, se o conteúdo ultrapassar o tamanho a caixa vai para a linha
+
+- `position:abolute;` - faz igual ao float, cria um novo contexto. Quem define a largura e altura é o conteúdo. `top bottom left right` - Consegue mover em relação a página. 
+Pixel é uma medida absoluta
+Porcentagem é uma medida dinâmica.
+
+- `container` - geralmente definido pela equipe. Tem um componete que tem a responsabilidade sozinho.
+- `<div>` - não tem valor semântico. Não retrata nada, apenas uma divisão, apenas para ter como dividir o conteúdo de forma visual.
+
+- `call to action OU cta` - é o botão de ação. Geralmente é o botão final, em que gostaria que o usuário clicasse.
+
+- `border` - é uma propriedade para ajustar os valores de propriedades individuais da borda em um único elemento na folha do estilo. Define o tamanho, o estilo e a cor.
+
+```
+    border: Tam_px style cor;
+```
+
+- `box-sizing: ;` - `content-box` - definido por padrão soma o valor da borda com os valores já definidos anteriormente do width e height. Faz o elemento crescer. Usado para a bordar não ultrapassar o tamanho definido pelo width e height. `border-box` - não soma o valor da borda com os valores já definidos anteriormente do width e height.
+Quando houver algum elemento que usa borda, prestar atenção nos comandos e no tamanho definido, pois é possível que a borda ultrapasse externamente e ocupe o espaço interno. Então quando acontecer é usado o `box-sizing` para corrigir o tamanho externo da borda, quando ao tamanho interno deve-se corrigir no `line-height`
